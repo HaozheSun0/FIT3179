@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Number of downloads of the world's most popular apps in 2022",
+  "data": {
+    "values": [
+      {"App": "TikTok", "Downloads (mm)": 672},
+      {"App": "Instagram", "Downloads (mm)": 548},
+      {"App": "Facebook", "Downloads (mm)": 449},
+      {"App": "WhatsApp", "Downloads (mm)": 424},
+      {"App": "CapCut", "Downloads (mm)": 357},
+      {"App": "Snapchat", "Downloads (mm)": 330},
+      {"App": "Telegram", "Downloads (mm)": 310},
+      {"App": "Subway Surfers", "Downloads (mm)": 304},
+      {"App": "Stumble Guys", "Downloads (mm)": 254},
+      {"App": "Spotify", "Downloads (mm)": 238}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Downloads (mm)",
+      "type": "quantitative",
+      "title": "Number of downloads (millions)"
+    },
+    "y": {"field": "App", "type": "nominal", "title": "Application"}
+  },
+  "width": 600,
+  "config": {}
+}
