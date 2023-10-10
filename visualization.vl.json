@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Map of the top-ranked apps in each country",
+  "width": 800,
+  "height": 600,
+  "projection": {"type": "equalEarth"},
+  "data": {
+    "values": [
+      {
+        "Region": "China",
+        "App": "WeChat",
+        "Downloads (mm)": 1008,
+        "Latitude": 35.861,
+        "Longitude": 104.195
+      },
+      {
+        "Region": "United States",
+        "App": "TikTok",
+        "Downloads (mm)": 99,
+        "Latitude": 37.09,
+        "Longitude": -95.712
+      },
+      {
+        "Region": "United Kingdom",
+        "App": "TikTok",
+        "Downloads (mm)": 17,
+        "Latitude": 55.378,
+        "Longitude": -3.436
+      },
+      {
+        "Region": "India",
+        "App": "Instagram",
+        "Downloads (mm)": 327,
+        "Latitude": 20.5937,
+        "Longitude": 78.9629
+      },
+      {
+        "Region": "Brazilian",
+        "App": "Shein",
+        "Downloads (mm)": 52,
+        "Latitude": -14.235,
+        "Longitude": -51.9253
+      }
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    },
+    {
+      "mark": "circle",
+      "encoding": {
+        "latitude": {"field": "Latitude", "type": "quantitative"},
+        "longitude": {"field": "Longitude", "type": "quantitative"},
+        "size": {"field": "Downloads (mm)", "type": "quantitative"},
+        "color": {"field": "App", "type": "nominal"}
+      }
+    }
+  ],
+  "config": {}
+}
