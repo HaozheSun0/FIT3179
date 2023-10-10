@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Number of downloads of the most popular games in 2022",
+  "data": {
+    "values": [
+      {"Game": "Subway Surfers", "Downloads (mm)": 304},
+      {"Game": "Stumble Guys", "Downloads (mm)": 254},
+      {"Game": "Roblox", "Downloads (mm)": 208},
+      {"Game": "Candy Crush Saga", "Downloads (mm)": 138},
+      {"Game": "Race Master 3D", "Downloads (mm)": 128},
+      {"Game": "8 Ball Pool", "Downloads (mm)": 120},
+      {"Game": "FIFA Mobile", "Downloads (mm)": 111},
+      {"Game": "Merge & Fight", "Downloads (mm)": 110},
+      {"Game": "Garena Free Fire", "Downloads (mm)": 109},
+      {"Game": "Bridge Race", "Downloads (mm)": 107}
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "Downloads (mm)", "type": "quantitative", "stack": true},
+    "color": {"field": "Game", "type": "nominal"}
+  },
+  "config": {}
+}
