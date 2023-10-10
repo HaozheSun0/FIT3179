@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Most popular game download trends for 2019, 2020 and 2021",
+  "width": 1000,
+  "height": 600,
+  "data": {
+    "values": [
+      {"Year": "2019", "Game": "Garena Free Fire", "Downloads (mm)": 327},
+      {"Year": "2019", "Game": "PUBG Mobile", "Downloads (mm)": 268},
+      {"Year": "2019", "Game": "Subway Surfers", "Downloads (mm)": 227},
+      {"Year": "2019", "Game": "Fun Race 3D", "Downloads (mm)": 210},
+      {"Year": "2019", "Game": "Color Bump 3D", "Downloads (mm)": 205},
+      {"Year": "2019", "Game": "My Talking Tom 2", "Downloads (mm)": 162},
+      {"Year": "2019", "Game": "Run Race 3D", "Downloads (mm)": 158},
+      {"Year": "2019", "Game": "Sand Balls", "Downloads (mm)": 154},
+      {"Year": "2019", "Game": "Homescapes", "Downloads (mm)": 153},
+      {"Year": "2019", "Game": "Stack Ball", "Downloads (mm)": 152},
+      {"Year": "2020", "Game": "Among Us", "Downloads (mm)": 264},
+      {"Year": "2020", "Game": "Subway Surfers", "Downloads (mm)": 227},
+      {"Year": "2020", "Game": "Garena Free Fire", "Downloads (mm)": 218},
+      {"Year": "2020", "Game": "PUBG Mobile", "Downloads (mm)": 175},
+      {"Year": "2020", "Game": "Hair Challenge", "Downloads (mm)": 158},
+      {"Year": "2020", "Game": "Join Clash", "Downloads (mm)": 155},
+      {"Year": "2020", "Game": "8Ball Pool", "Downloads (mm)": 151},
+      {"Year": "2020", "Game": "Ludo King", "Downloads (mm)": 149},
+      {"Year": "2020", "Game": "Candy Crush Saga", "Downloads (mm)": 138},
+      {"Year": "2021", "Game": "Subway Surfers", "Downloads (mm)": 191},
+      {"Year": "2021", "Game": "Roblox", "Downloads (mm)": 182},
+      {"Year": "2021", "Game": "Bridge Race", "Downloads (mm)": 169},
+      {"Year": "2021", "Game": "Garena Free Fire", "Downloads (mm)": 154},
+      {"Year": "2021", "Game": "Among Us", "Downloads (mm)": 152},
+      {"Year": "2021", "Game": "Hair Challenge", "Downloads (mm)": 138},
+      {"Year": "2021", "Game": "Join Clash", "Downloads (mm)": 136},
+      {"Year": "2021", "Game": "8Ball Pool", "Downloads (mm)": 130},
+      {"Year": "2021", "Game": "Ludo King", "Downloads (mm)": 125},
+      {"Year": "2021", "Game": "Candy Crush Saga", "Downloads (mm)": 119}
+    ]
+  },
+  "mark": "bar",
+  "selection": {
+    "highlight": {"type": "single", "empty": "none", "on": "mouseover"},
+    "select": {"type": "multi", "toggle": "event.ctrlKey"}
+  },
+  "encoding": {
+    "x": {"field": "Game", "type": "nominal", "title": "Game"},
+    "y": {
+      "field": "Downloads (mm)",
+      "type": "quantitative",
+      "title": "Download Count (Millions)"
+    },
+    "color": {"field": "Year", "type": "nominal", "title": "Year"},
+    "tooltip": [
+      {"field": "Game", "type": "nominal", "title": "Game"},
+      {
+        "field": "Downloads (mm)",
+        "type": "quantitative",
+        "title": "Download Count (Millions)"
+      },
+      {"field": "Year", "type": "nominal", "title": "Year"}
+    ]
+  },
+  "config": {}
+}
