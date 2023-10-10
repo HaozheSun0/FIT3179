@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "2022年前三名应用程序的下载量",
+  "data": {
+    "values": [
+      {"form": "Social Apps", "App": "Instagram", "Downloads (mm)": 547},
+      {"form": "Social Apps", "App": "Facebook", "Downloads (mm)": 449},
+      {"form": "Social Apps", "App": "WhatsApp", "Downloads (mm)": 424},
+      {
+        "form": "Business Apps ",
+        "App": "WhatsApp Business",
+        "Downloads (mm)": 198
+      },
+      {"form": "Business Apps ", "App": "Zoom", "Downloads (mm)": 163},
+      {
+        "form": "Business Apps ",
+        "App": "Microsoft Teams",
+        "Downloads (mm)": 111
+      },
+      {"form": "Entertainment Apps", "App": "TikTok", "Downloads (mm)": 672},
+      {"form": "Entertainment Apps", "App": "Netflix", "Downloads (mm)": 165},
+      {"form": "Entertainment Apps", "App": "YouTube", "Downloads (mm)": 154},
+      {"form": "Music & Audio Apps", "App": "Spotify", "Downloads (mm)": 238},
+      {"form": "Music & Audio Apps", "App": "StarMaker", "Downloads (mm)": 96},
+      {"form": "Music & Audio Apps", "App": "Shazam", "Downloads (mm)": 71},
+      {"form": "Shopping Apps", "App": "Shein", "Downloads (mm)": 229},
+      {"form": "Shopping Apps", "App": "Meesho", "Downloads (mm)": 210},
+      {"form": "Shopping Apps", "App": "Shopee", "Downloads (mm)": 203},
+      {"form": "Travel Apps", "App": "Google Maps", "Downloads (mm)": 113},
+      {"form": "Travel Apps", "App": "Uber", "Downloads (mm)": 107},
+      {"form": "Travel Apps", "App": "Booking.com", "Downloads (mm)": 80}
+    ]
+  },
+  "facet": {"column": {"field": "form", "header": {"labelOrient": "bottom"}}},
+  "spec": {
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "App", "type": "nominal", "title": "App"},
+      "y": {
+        "field": "Downloads (mm)",
+        "type": "quantitative",
+        "title": "Downloads (mm)"
+      },
+      "color": {"field": "App", "type": "nominal", "title": "App"},
+      "tooltip": [
+        {"field": "App", "type": "nominal", "title": "App"},
+        {
+          "field": "Downloads (mm)",
+          "type": "quantitative",
+          "title": "Downloads (mm)"
+        }
+      ]
+    },
+    "width": 300,
+    "height": 200
+  },
+  "resolve": {"scale": {"color": "independent"}},
+  "config": {}
+}
