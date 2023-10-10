@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "2022年前三名应用程序的下载量",
+  "description": "Top 3 app downloads in 2022",
   "data": {
     "values": [
       {"form": "Social Apps", "App": "Instagram", "Downloads (mm)": 547},
