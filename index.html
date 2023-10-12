@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +8,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
-    <title>最受欢迎的Apps</title>
+    <title>World's Most Popular Apps</title>
 </head>
   
   <!-- Center align the title -->
@@ -44,30 +41,70 @@
 
 <body>
 
-  <div class="page">
-    <h1>标题</h1>
-    <p></p>
-
-    <h2>小标题</h2>
+  <div class="body">
+    <h1>Most popular Apps in different countries</h1>
     <p></p>
     <p></p>
-    <p>文字</p>
+    <p>For different countries, they have different popular Apps.</p>
     <p></p>
     <p></p>
     <p>文字2</p>
     <p></p>
     <p></p>
-  
-      <div class="pure-g">
-          <!-- Chart 1: Life Expectancy Worldwide -->
-        <h2>Chart 1: Life Expectancy Worldwide</h2>
-        <p>文字</p>
-        <div id="visualization"></div>
+      <div class="1">
+          <!-- Maps -->
+        <h2>Maps of the Most popular Apps in different countries </h2>
+        <p>文字33333333</p>
+        <div id="visualization_Map"></div>
+      </div>
+
+       <div class="2">
+          <!-- Chart 1 -->
+        <h2>Maps of the 第二个Most popular Apps in different countries </h2>
+        <p>文字3666663333333</p>
+        <div id="visualization_Chart1"></div>
+      </div>
+
+       <div class="3">
+          <!-- Chart 2 -->
+        <h2>Maps of the 第三个Most popular Apps in different countries </h2>
+        <p>文字33333333</p>
+        <div id="visualization_Chart2"></div>
+      </div>
+
+       <div class="4">
+          <!-- Chart 3 -->
+        <h2>Maps of the 第四个Most popular Apps in different countries </h2>
+        <p>文字33333333</p>
+        <div id="visualization_Chart 3"></div>
+      </div>
+
+      <div class="5">
+          <!-- Chart 4 -->
+        <h2>Maps of the 第wu个Most popular Apps in different countries </h2>
+        <p>文字333333kj33</p>
+        <div id="visualization_Chart4"></div>
       </div>
 </div>
 
 <script type="text/javascript">
-var vg_1 = "Js/visualization.vl.json";
+var vg_1 = "Js/visualization_Maps.vl.json";
+vegaEmbed("#visualization", vg_1).then(function(result) {
+// Access the Vega view instance(https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+var vg_2 = "Js/visualization_Chart1.vl.json";
+vegaEmbed("#visualization", vg_1).then(function(result) {
+// Access the Vega view instance(https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+var vg_3 = "Js/visualization_Chart2.vl.json";
+vegaEmbed("#visualization", vg_1).then(function(result) {
+// Access the Vega view instance(https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+var vg_4 = "Js/visualization_Chart 3.vl.json";
+vegaEmbed("#visualization", vg_1).then(function(result) {
+// Access the Vega view instance(https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+var vg_5 = "Js/visualization_Chart4.vl.json";
 vegaEmbed("#visualization", vg_1).then(function(result) {
 // Access the Vega view instance(https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
