@@ -31,29 +31,28 @@
       {"form": "Travel Apps", "App": "Booking.com", "Downloads (mm)": 80}
     ]
   },
-  "facet": {"column": {"field": "form", "header": {"labelOrient": "bottom"}}},
-  "spec": {
-    "mark": "bar",
-    "encoding": {
-      "x": {"field": "App", "type": "nominal", "title": "App"},
-      "y": {
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "App", "type": "nominal", "title": "App"},
+    "y": {
+      "aggregate": "sum",
+      "field": "Downloads (mm)",
+      "type": "quantitative",
+      "title": "Total Downloads (mm)"
+    },
+    "color": {"field": "form", "type": "nominal", "title": "Category"},
+    "tooltip": [
+      {"field": "App", "type": "nominal", "title": "App"},
+      {
         "field": "Downloads (mm)",
         "type": "quantitative",
         "title": "Downloads (mm)"
-      },
-      "color": {"field": "App", "type": "nominal", "title": "App"},
-      "tooltip": [
-        {"field": "App", "type": "nominal", "title": "App"},
-        {
-          "field": "Downloads (mm)",
-          "type": "quantitative",
-          "title": "Downloads (mm)"
-        }
-      ]
-    },
-    "width": 300,
-    "height": 200
+      }
+    ]
   },
-  "resolve": {"scale": {"color": "independent"}},
-  "config": {}
+  "width": 800,
+  "height": 400,
+  "config": {
+    "view": {"stroke": "transparent"}
+  }
 }
