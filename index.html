@@ -1,4 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Life expectancy & Socio-Economic (world bank)</title>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Center align the title -->
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+
+  <!-- Center align the subtitle and set the color to blue -->
+  <style>
+    .subtitle {
+      text-align: center;
+      color: blue;
+    }
+  </style>
+
+  <!-- Center align the chart and set a max-width -->
+  <style>
+    .chart-container {
+      text-align: center;
+      margin: 0 auto; /* Center horizontally */
+      max-width: 1000px; /* Set max-width to control chart size */
+    }
+  </style>
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" type="text/css" href="Styles.css">
+</head>
+
+<body>
+
+  <div class="page">
+    <h1>标题</h1>
+    <p></p>
+
+    <h2>小标题</h2>
+    <p></p>
+    <p></p>
+    <p>文字</p>
+    <p></p>
+    <p></p>
+    <p>文字2</p>
+    <p></p>
+    <p></p>
+  
+
+    <div class="pure-g">
+
+      <!-- Chart 1: Life Expectancy Worldwide -->
+      <div class="pure-u-1 chart-container">
+        <h2>Chart 1: Life Expectancy Worldwide</h2>
+        <p>As can be seen from Chart 1, the distribution of life expectancy around the world is extremely uneven. Life
+          expectancy at birth is generally higher in Europe than in other regions, while life expectancy at birth is
+          lowest in sub-Saharan Africa. Sub-Saharan African countries consistently rank among the lowest-income
+          countries in terms of GDP per capita. Therefore, there is considerable room for improvement in life
+          expectancy in sub-Saharan countries. The world's two superpowers, the United States and China, are not above
+          many European countries.</p>
+        <div id="visualization.vl (1)"></div>
+      </div>
+
+<!-- Chart 2: Ranking of Life Expectancy -->
+<div class="pure-u-1 chart-container">
+  <h2>Chart 2: Ranking of Life Expectancy</h2>
+  <!-- Description of how worldwide life expectancy is ranked. -->
+  <div class="chart-description-container" style="display: flex;">
+    <div id="visualization.vl (2)"></div>
+    <div class="chart-description" style="flex: 1;">
+    
+
+
+
+  </div> <!-- end page -->
+
+  <script type="text/javascript">
+    var vis1 = "Js/visualization.vl (1).vl.json";
+    var vis2 = "Js/visualization.vl (1).vl.json";
+   
+
+    vegaEmbed('#map', vis1, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#chart2', vis2, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#chart3', vis3, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#chart4', vis4, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+</script>
 
 
 </body>
+
 </html>
+
+
