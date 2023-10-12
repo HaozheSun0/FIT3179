@@ -61,17 +61,16 @@
     
         <h2>Chart 1: Life Expectancy Worldwide</h2>
         <p>文字</p>
-        <div id="visualization.vl (1)">
+        <div id="visualization"></div>
       </div>
 
 <body>
 
 </html>
 
-var vg_1 = "Js/visualization.vl (1).json";
-vegaEmbed("#chart", vg_1).then(function(result) {
-// Access the Vega view instance
-(https://vega.github.io/vega/docs/api/view/) as result.view
+var vg_1 = "Js/visualization.vl.json";
+vegaEmbed("#visualization", vg_1).then(function(result) {
+// Access the Vega view instance(https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
 
