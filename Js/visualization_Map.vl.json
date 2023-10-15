@@ -20,6 +20,111 @@
         "Latitude": 37.09,
         "Longitude": -95.712
       },
+        {
+        "Region": "Japan",
+        "App": "LINE",
+        "Downloads (mm)": 85,
+        "Latitude": 36.2048,
+        "Longitude": 138.2529
+      },
+            {
+        "Region": "Mexico",
+        "App": "Facebook",
+        "Downloads (mm)": 94,
+        "Latitude": 23.6345,
+        "Longitude": -102.5528
+      },
+      {
+        "Region": "Canada",
+        "App": "Facebook",
+        "Downloads (mm)": 30,
+        "Latitude": 56.1304,
+        "Longitude": -106.3468
+      },
+      {
+        "Region": "Australia",
+        "App": "Facebook",
+        "Downloads (mm)": 22,
+        "Latitude": -25.2744,
+        "Longitude": 133.7751
+      },
+      {
+        "Region": "Spain",
+        "App": "Instagram",
+        "Downloads (mm)": 53,
+        "Latitude": 40.4637,
+        "Longitude": -3.7492
+      },
+      {
+        "Region": "Italy",
+        "App": "WhatsApp",
+        "Downloads (mm)": 47,
+        "Latitude": 41.8719,
+        "Longitude": 12.5674
+      },
+      {
+        "Region": "Indonesia",
+        "App": "WhatsApp",
+        "Downloads (mm)": 165,
+        "Latitude": -0.7893,
+        "Longitude": 113.9213
+      },
+      {
+        "Region": "Nigeria",
+        "App": "WhatsApp",
+        "Downloads (mm)": 76,
+        "Latitude": 9.081999,
+        "Longitude": 8.6753
+      },
+      {
+        "Region": "Saudi Arabia",
+        "App": "Snapchat",
+        "Downloads (mm)": 20,
+        "Latitude": 23.8859,
+        "Longitude": 45.0792
+      },
+           {
+        "Region": "Russia",
+        "App": "VKontakte",
+        "Downloads (mm)": 120,
+        "Latitude": 61.524,
+        "Longitude": 105.3188
+      },
+      {
+        "Region": "France",
+        "App": "TikTok",
+        "Downloads (mm)": 38,
+        "Latitude": 46.603354,
+        "Longitude": 1.888334
+      },
+      {
+        "Region": "South Korea",
+        "App": "KakaoTalk",
+        "Downloads (mm)": 75,
+        "Latitude": 35.9078,
+        "Longitude": 127.7669
+      },
+      {
+        "Region": "Turkey",
+        "App": "Facebook",
+        "Downloads (mm)": 34,
+        "Latitude": 38.9637,
+        "Longitude": 35.2433
+      },
+      {
+        "Region": "Iran",
+        "App": "Telegram",
+        "Downloads (mm)": 43,
+        "Latitude": 32.4279,
+        "Longitude": 53.6880
+      }
+      {
+        "Region": "Germany",
+        "App": "WhatsApp",
+        "Downloads (mm)": 63,
+        "Latitude": 51.1657,
+        "Longitude": 10.4515
+      }
       {
         "Region": "United Kingdom",
         "App": "TikTok",
