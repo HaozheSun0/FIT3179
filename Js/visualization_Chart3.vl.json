@@ -36,11 +36,33 @@
       {"Year": "2021", "Game": "Candy Crush Saga", "Downloads (mm)": 119}
     ]
   },
+  "params": [
+        {
+          "name": "Year",
+          "bind": {
+            "input": "select",
+            "options": [
+              null,
+              "2019", 
+              "2020",
+              "2021"
+            ],
+            "labels": [
+              "Show All",
+              "2019", 
+              "2020",
+              "2021"
+            ],
+            "name": "Year: "
+          }
+        }
+      ],
+      "transform": [
+        {
+          "filter": "Year == null || datum.Year == Year"
+        }
+      ],
   "mark": "bar",
-  "selection": {
-    "highlight": {"type": "single", "empty": "none", "on": "mouseover"},
-    "select": {"type": "multi", "toggle": "event.ctrlKey"}
-  },
   "encoding": {
     "x": {"field": "Game", "type": "nominal", "title": "Game"},
     "y": {
