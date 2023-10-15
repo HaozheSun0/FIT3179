@@ -6,17 +6,10 @@
       {"form": "Social Apps", "App": "Instagram", "Downloads (mm)": 547},
       {"form": "Social Apps", "App": "Facebook", "Downloads (mm)": 449},
       {"form": "Social Apps", "App": "WhatsApp", "Downloads (mm)": 424},
-      {
-        "form": "Business Apps ",
-        "App": "WhatsApp Business",
-        "Downloads (mm)": 198
-      },
+      {"form": "Business Apps ","App": "WhatsApp Business","Downloads (mm)": 198},
       {"form": "Business Apps ", "App": "Zoom", "Downloads (mm)": 163},
-      {
-        "form": "Business Apps ",
-        "App": "Microsoft Teams",
-        "Downloads (mm)": 111
-      },
+      {"form": "Business Apps ","App": "Microsoft Teams",
+      "Downloads (mm)": 111},
       {"form": "Entertainment Apps", "App": "TikTok", "Downloads (mm)": 672},
       {"form": "Entertainment Apps", "App": "Netflix", "Downloads (mm)": 165},
       {"form": "Entertainment Apps", "App": "YouTube", "Downloads (mm)": 154},
@@ -31,6 +24,38 @@
       {"form": "Travel Apps", "App": "Booking.com", "Downloads (mm)": 80}
     ]
   },
+  "params": [
+        {
+          "name": "form",
+          "bind": {
+            "input": "select",
+            "options": [
+              null,
+              "Social Apps", 
+              "Business Apps ",
+              "Entertainment Apps", 
+              "Music & Audio Apps", 
+              "Shopping Apps", 
+              "Travel Apps"
+            ],
+            "labels": [
+              "Show All",
+               "Social Apps", 
+              "Business Apps ",
+              "Entertainment Apps", 
+              "Music & Audio Apps", 
+              "Shopping Apps", 
+              "Travel Apps"
+            ],
+            "name": "Type: "
+          }
+        }
+      ],
+      "transform": [
+        {
+          "filter": "form == null || datum.form == form"
+        }
+        ],
   "mark": "bar",
   "encoding": {
     "x": {"field": "App", "type": "nominal", "title": "App"},
@@ -53,6 +78,6 @@
   "width": 800,
   "height": 400,
   "config": {
-    "view": {"stroke": "transparent"}
+
   }
 }
