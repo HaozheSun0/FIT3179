@@ -15,6 +15,45 @@
       {"App": "Spotify", "Downloads (mm)": 238}
     ]
   },
+    "params": [
+        {
+          "name": "App",
+          "bind": {
+            "input": "select",
+            "options": [
+              null,
+              "TikTok", 
+              "Facebook",
+              "WhatsApp", 
+              "CapCut", 
+              "Snapchat", 
+              "Telegram", 
+              "Subway Surfers",
+              "Stumble Guys", 
+              "Spotify"
+            ],
+            "labels": [
+              "Show All",
+              "TikTok", 
+              "Facebook",
+              "WhatsApp", 
+              "CapCut", 
+              "Snapchat", 
+              "Telegram", 
+              "Subway Surfers",
+              "Stumble Guys", 
+              "Spotify"
+            ],
+            "name": "App: "
+          }
+        }
+      ],
+      "transform": [
+        {
+          "filter": "App == null || datum.App == App"
+        }
+        
+      ],
   "mark": "bar",
   "encoding": {
     "x": {
@@ -27,3 +66,4 @@
   "width": 600,
   "config": {}
 }
+
